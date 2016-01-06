@@ -63,7 +63,13 @@ module.exports = _.merge({
              */
             input: {
                 //Replace VAR1 with the name of an expected input, and add more inputs as needed.
-                VAR1: 'foo'
+                "publicationId": "65b8b6b750ac",
+                "authorId": "19d225904cefbecfcb290ed2eb59d8cafa832c84af70aef1bcd326b60f9975262",
+                "title": "Hard things in software development",
+                "contentFormat": "html",
+                "content": "<p>Cache invalidation</p><p>Naming things</p>",
+                "tags": ["development", "design"],
+                "publishStatus": "draft"
             }
         }
     }
