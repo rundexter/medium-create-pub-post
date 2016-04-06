@@ -3,87 +3,46 @@
  */
 {
     //Required. Inputs the module expects.
-    "inputs": [
-        {
-            "id": "publicationId",
-            "title":"Publication ID"
-        },
-        {
-            "id": "authorId",
-            "title":"Author ID"
-        },
-        {
-            "id": "title",
-            "title":"Title"
-        },
-        {
-            "id": "contentFormat",
-            "title":"Format"
-        },
-        {
-            "id": "content",
-            "title":"Content"
-        },
-        {
-            "id": "tags",
-            "title":"Tags"
-        },
-        {
-            "id": "canonicalUrl",
-            "title":"Canonical URL"
-        },
-        {
-            "id": "publishStatus",
-            "title":"Status"
-        },
-        {
-            "id": "license",
-            "title":"License"
-        }
-    ],
+    "inputs": [{
+        "id": "publicationId",
+        "title":"Publication ID"
+    }, {
+        "id": "title",
+        "title":"Title"
+    }, {
+        "id": "contentFormat",
+        "title":"Format"
+    }, {
+        "id": "content",
+        "title":"Content"
+    }, {
+        "id": "tags",
+        "title":"Tags"
+    }, {
+        "id": "canonicalUrl",
+        "title":"Canonical URL"
+    }, {
+        "id": "publishStatus",
+        "title":"Status"
+    }, {
+        "id": "license",
+        "title":"License"
+    }],
     //Required. Outputs the module emits.
-    "outputs": [
-        {
-            "id": "id",
-            "title":"Post ID"
-        },
-        {
-            "id": "title",
-            "title":"Title"
-        },
-        {
-            "id": "authorId",
-            "title":"Author ID"
-        },
-        {
-            "id": "tags",
-            "title":"Tags"
-        },
-        {
-            "id": "url",
-            "title":"URL"
-        },
-        {
-            "id": "canonicalUrl",
-            "title":"Canonical URL"
-        },
-        {
-            "id": "publishStatus",
-            "title":"Status"
-        },
-        {
-            "id": "publicationId",
-            "title":"Publication ID"
-        },
-        {
-            "id": "license",
-            "title":"License"
-        },
-        {
-            "id": "licenseUrl",
-            "title":"License URL"
-        }
-    ],
+    "outputs": [{
+        "id": "id",
+        "title":"Post ID"
+    }, {
+        "id": "url",
+        "title":"URL"
+    }, {
+        "id": "licenseUrl",
+        "title":"License URL"
+    }],
+    "providers": [{
+      "name": "medium"
+      , "scopes": [ "basicProfile", "publishPost" ]
+    }],
     "icon": "medium",
     "title": "Medium: Create Publication Post"
 }
